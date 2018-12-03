@@ -37,7 +37,8 @@ body {
   bottom: 30%;
 }
 
-#d{
-{
-  background-color: blue;
+
+.box{
+  font-size: 5px;
+  font-family: 'Oswald', sans-serif;
 }
