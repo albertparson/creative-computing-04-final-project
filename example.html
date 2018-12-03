@@ -13,7 +13,7 @@
   #viewport {
    position:fixed;
    perspective:100px;
-   perspective-origin:30% 40%;
+   perspective-origin:50% 50%;
    border: 2px solid black;
    height: 700px;
    width: 400px;
@@ -30,13 +30,19 @@
    margin-top:-50px;
  }
  #a {
-   background-color:hsl(0, 100%, 47%)
+   background-color:rgba(255,0,0,.5);
+   border:2px solid red;
+   transform:translateZ(-200px)
  }
  #b {
-   background-color:hsl(0, 100%, 47%)
+   background-color:rgba(0,255,0,.5);
+   border:2px solid green;
+   transform:translateZ(-50px)
  }
  #c {
- background-color:hsl(0, 100%, 47%)
+  background-color:rgba(0,0,255,.5);
+  border:2px solid blue;
+  transform:translateZ(0px)
  }
  #d {
   background-color:hsl(0, 100%, 47%);
@@ -48,21 +54,21 @@
 <body>
   <div id="viewport">
     <div class="box" id="a">
-     <h1>Div A</h1> 
+      Div A
     </div>
     <div class="box" id="b">
-     <h2>Div B</h2> 
+      Div B
     </div>
     <div class="box" id="c">
-     <h3>Div C</h3> 
+      Div C
     </div>
     <div class="box" id="d">
-      <h4>Class starts in 30 min, you just woke up from a nap, and all your shirts are wrinkly.</h4> 
+      Div D
     </div>    
   </div>
   <script>
     var scrollPosition = document.body.scrollTop,
-        boxPositions = [-300, -80, 0, 50];
+        boxPositions = [-200, -50, 0, 50];
     function scrollDelta() {
       var newScrollPosition = document.body.scrollTop,
           delta = newScrollPosition - scrollPosition;

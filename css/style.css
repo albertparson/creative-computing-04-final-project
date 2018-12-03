@@ -12,6 +12,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: hsl(53, 100%, 51%);
 }
 
 .center {
@@ -26,4 +27,17 @@ body {
 .content {
   height: 100%;
   width: 100%;
+}
+
+.shape1 {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  left: 60%;
+  bottom: 30%;
+}
+
+#d{
+{
+  background-color: blue;
 }
