@@ -14,7 +14,8 @@
    position:fixed;
    perspective:100px;
    perspective-origin:30% 40%;
-   border: 2px solid black;
+   border: 2px;
+   color: transparent;
    height: 700px;
    width: 400px;
    left:50%;
@@ -30,22 +31,47 @@
    margin-top:-50px;
  }
  #a {
-   background-color:hsl(0, 100%, 47%)
+   background-color:hsl(0, 100%, 47%);
+
  }
  #b {
-   background-color:hsl(0, 100%, 47%)
+   background-color:hsl(0, 100%, 47%);
+    
+  font-family: 'Oswald', sans-serif;
+ font-size: 10px;
  }
  #c {
- background-color:hsl(0, 100%, 47%)
+ background-color:hsl(0, 100%, 47%);
+
+  font-family: 'Oswald', sans-serif;
+ font-size: 10px;
  }
  #d {
   background-color:hsl(0, 100%, 47%);
   
-  transform:translateZ(50px)
+  
+  font-family: 'Oswald', sans-serif;
+ font-size: 10px;
+
+}
+
+h1.title {
+    color: hsl(0, 100%, 47%);
+    position: absolute;
+    right: 610px;
+    bottom: 500px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+ 
  } 
   </style>
 </head>
 <body>
+
+<h1 class="title">Fate Maze</h1>
+
+
   <div id="viewport">
     
     <div class="box" id="b">
@@ -65,7 +91,7 @@
   </div>
   <script>
     var scrollPosition = document.body.scrollTop,
-        boxPositions = [-300, -50, 150, 50];
+        boxPositions = [-350, -100, 50, 50];
     function scrollDelta() {
       var newScrollPosition = document.body.scrollTop,
           delta = newScrollPosition - scrollPosition;
